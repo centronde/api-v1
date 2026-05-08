@@ -15,9 +15,9 @@ use PswGroup\Api\Model\AbstractResource;
 class Job extends AbstractResource
 {
     /**
-     * @var int Id of the job
+     * @var string Id of the job
      */
-    private int $id;
+    private string $id;
 
     /**
      * @var string State of the job
@@ -44,7 +44,7 @@ class Job extends AbstractResource
      */
     private ?DateTimeInterface $stoppedAt = null;
 
-    public function getId(): int
+    public function getId(): string
     {
         return $this->id;
     }
